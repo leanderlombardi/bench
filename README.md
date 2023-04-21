@@ -42,4 +42,4 @@ $ sudo make uninstall
 bench
 ```
 
-&copy; 2023 Leander Lombardi, program allowed for personal use.
+##### &copy; 2023 Leander Lombardi, program allowed for personal use.
