@@ -21,7 +21,7 @@ int main(void) {
 
 	FILE *s_file = fopen("test.asm", "w");
 	char *s = "section .data\n\tmsg    db 'Hello, world!',10\n\tmsglen equ $-msg\n\nsection .text\n\tglobal _start\n\n"
-			  "_start:\n\tmov eax, 4\n\tmov ebx, 1\n\tmov ecx, msg\n\tmov edx, msglen\n\tint 0x80\n\nmov eax, 1\n\txor ebx, ebx\n\tint 0x8\n";
+			  "_start:\n\tmov eax, 4\n\tmov ebx, 1\n\tmov ecx, msg\n\tmov edx, msglen\n\tint 0x80\n\nmov eax, 1\n\txor ebx, ebx\n\tint 0x80\n";
 	fprintf(s_file, s);
 	fclose(s_file);
 
